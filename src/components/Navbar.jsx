@@ -32,10 +32,10 @@ function Navbar() {
 
         <div className="menu relative flex bg-semitransparent rounded-full border border-[rgba(255,255,255,0.1)] backdrop-blur-sm p-2 overflow-hidden">
           <div className={`bg-color-menu absolute ${projectsActive ? "left-2 right-1/2" : "left-1/2 right-2"} top-2 bottom-2 rounded-full bg-semitransparent transition-all`}></div>
-          <Link to="/" onClick={() => setProjectsActive(true)} className="rounded-full text-center text-sm px-4 xs:px-6 py-2">
+          <Link to="/portfolio/" onClick={() => setProjectsActive(true)} className="rounded-full text-center text-sm px-4 xs:px-6 py-2">
             Works
           </Link>
-          <Link to="/about" onClick={() => setProjectsActive(false)} className="rounded-full text-center text-sm px-4 xs:px-6 py-2">
+          <Link to="/portfolio/about" onClick={() => setProjectsActive(false)} className="rounded-full text-center text-sm px-4 xs:px-6 py-2">
             About
           </Link>
           {/* <p>{window.location.pathname}</p> */}
