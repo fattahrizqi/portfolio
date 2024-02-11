@@ -8,8 +8,8 @@ function App() {
     <Router className="overflow-hidden">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Projects />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Projects />} />
+        <Route path="/portfolio/about" element={<About />} />
       </Routes>
     </Router>
   );
