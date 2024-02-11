@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import { React, useRef, useEffect } from "react";
 import { Cursor, Education, Introduction } from "../components";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -16,6 +16,7 @@ function About() {
     return pos === 1 ? "relative" : "fixed";
   });
 
+  // scroll
   return (
     <>
       {/* cursor */}
@@ -23,7 +24,7 @@ function About() {
       {/* main */}
       <motion.section style={{ opacity }} ref={targetRef} className="relative h-screen w-full flex flex-col items-center bg-whiteRadial py-20 overflow-hidden">
         <motion.div initial={{ opacity: 0, scale: 0.3 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.3 }} style={{ scale, x: "-50%", y: "-50%", position }} className="top-1/2 left-1/2">
-          <h1>About me.</h1>
+          <h1 className="text-center text-5xl md:text-[68px]">About me.</h1>
         </motion.div>
         <motion.div style={{ scale }} className="image fixed bottom-10 w-24 opacity-50">
           <img src="https://images.squarespace-cdn.com/content/v1/5edf2d43ee75f35231fdbea8/1591798673806-P7OQRYRY3Y9ZESJ7JDR0/Scroll-White-1.gif" className="w-full h-full" />

@@ -8,7 +8,7 @@ function Navbar() {
   const [linkClicked, setLinkClicked] = useState(false);
 
   useEffect(() => {
-    if (window.location.pathname == "/about") {
+    if (window.location.pathname == "/portfolio/about") {
       setProjectsActive(false);
     }
   }, []);
