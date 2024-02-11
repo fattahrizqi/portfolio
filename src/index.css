@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text: #e0eeee;
+  /* --background: #0a1717; */
+  --background: #f1f1f1;
+  --primary: #9ddedb;
+  --secondary: #248c88;
+  --accent: #50dfda;
+}
+
+* {
+  transition: background-color, background-image 0.3s ease-in-out;
+  /* background-image: radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, rgb(255, 255, 255), rgba(0, 0, 0, 0)); */
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: var(--text);
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
